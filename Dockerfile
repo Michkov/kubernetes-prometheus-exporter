@@ -12,7 +12,6 @@ COPY requirements.txt /usr/local/requirements.txt
 RUN pip3 install --no-dependencies -r /usr/local/requirements.txt
 
 COPY kubernetes-prometheus-exporter.py /usr/local/bin/.
-COPY docker/ /docker/
 
 USER 1001
 EXPOSE 8000
